@@ -1,0 +1,44 @@
+Documentation.
+
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(3000);  //write module including fnctions of fra,ework
+
+var myLogger = function (req, res, next) {
+  console.log('LOGGED');
+  next();
+};
+// incl;uding next internal property of express framework for reading state of information changing in 
+//the port of server (3000 in the example)
+
+var express = require('express');
+var app = express();
+
+var myLogger = function (req, res, next) {
+  console.log('LOGGED');
+  next();
+};
+
+//myLogger - function middle existing compiler
+
+
+
+app.use(myLogger); //loading of myLogger
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(3000);
+
+var requestTime = function (req, res, next) {
+  req.requestTime = Date.now();
+  next();
+};
+
+
