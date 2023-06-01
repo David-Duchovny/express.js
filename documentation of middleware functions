@@ -1,5 +1,8 @@
 Documentation.
 
+next() is not part of Node.js or Express API, third part of middleware. standart.
+As say developers 👍 : possibilities of middleware - infinite.
+
 var express = require('express');
 var app = express();
 
