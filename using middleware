@@ -1,0 +1,28 @@
+routing
+//boeing
+var express = require('express'); 
+var app = express(); 
+//routing is how server responding on request of client
+app.get('/',function(req,res){
+  res.send('hello wold');
+  });
+  
+  /*
+  wirnting in engines explore to unknown functons which connect with state of influence
+  pug engine for css picture drawing video-shaders postaliaseff
+  */
+  
+Parametres of app
+{
+
+views, каталог, в котором находятся файлы шаблонов. Например: app.set('views', './views')
+view engine, используемый шаблонизатор. Например: app.set('view engine', 'pug')
+Затем установите соответствующий пакет npm шаблонизатора:
+
+$ npm install pug --save
+ 
+}
+
+Loading ...
+
+app.set('view engine', 'pug');
